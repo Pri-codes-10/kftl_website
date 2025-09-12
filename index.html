@@ -11,7 +11,10 @@
       rel="stylesheet"
     />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/9c89a7f7b2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9c89a7f7b2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       /* ===== GENERAL STYLES ===== */
@@ -27,7 +30,8 @@
         color: #fff;
         scroll-behavior: smooth;
       }
-      h1, h2 {
+      h1,
+      h2 {
         font-weight: 800;
       }
 
@@ -122,8 +126,14 @@
         transform: scale(1.05);
       }
       @keyframes fadeInUp {
-        0% { opacity: 0; transform: translateY(30px); }
-        100% { opacity: 1; transform: translateY(0); }
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       /* ===== SECTIONS ===== */
@@ -166,7 +176,8 @@
         border-radius: 10px;
         overflow: hidden;
       }
-      .fixtures th, .fixtures td {
+      .fixtures th,
+      .fixtures td {
         padding: 15px;
         border-bottom: 1px solid #333;
         text-align: center;
@@ -292,7 +303,9 @@
     <header>
       <div class="hero-text">
         <h1>KFTL 2025 SEASON 1</h1>
-        <p><i class="fas fa-map-marker-alt"></i> Axis Mall Turf | Nov–Dec 2025</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Axis Mall Turf | Nov–Dec 2025
+        </p>
         <p>The Ultimate Football Tournament in Kolkata</p>
         <a href="#register"><i class="fas fa-users"></i> Register Now</a>
       </div>
@@ -306,7 +319,9 @@
         compete for glory, prizes, and the ultimate bragging rights.
       </p>
       <ul>
-        <li><i class="fas fa-trophy"></i> 3,000 Prize Pool + Trophy + Medals</li>
+        <li>
+          <i class="fas fa-trophy"></i> 3,000 Prize Pool + Trophy + Medals
+        </li>
         <li><i class="fas fa-futbol"></i> 8 Teams</li>
         <li><i class="fas fa-fire"></i> Group Stage Format</li>
       </ul>
@@ -337,17 +352,15 @@
     <!-- ===== LEADERBOARD ===== -->
     <section id="leaderboard" class="leaderboard">
       <h2><i class="fas fa-medal"></i> Leaderboard</h2>
-      <ol><b>GROUP 1</b>
-        <li> Team A - 0 pts</li>
-        <li> Team C - 0 pts</li>
-        <li> Team B - 0 pt</li>
-        <li> Team D - 0 pts</li>
-      </ol>
-      <ol><b>GROUP 2</b>
-        <li> Team E - 0 pts</li>
-        <li> Team F - 0 pts</li>
-        <li> Team G - 0 pt</li>
-        <li> Team H - 0 pts</li>
+      <ol>
+        <li>Team A - 0 pts</li>
+        <li>Team C - 0 pts</li>
+        <li>Team B - 0 pt</li>
+        <li>Team D - 0 pts</li>
+        <li>Team E - 0 pts</li>
+        <li>Team F - 0 pts</li>
+        <li>Team G - 0 pt</li>
+        <li>Team H - 0 pts</li>
       </ol>
     </section>
 
@@ -355,13 +368,66 @@
     <section id="register">
       <h2><i class="fas fa-clipboard-list"></i> Register Your Team</h2>
       <div class="form-container">
+        <p style="text-align: center; margin-bottom: 20px">
+          📌 Step 1: Scan the QR code below and pay the registration fee. <br />
+          📌 Step 2: Fill out the form with your payment details.
+        </p>
+
+        <!-- QR Code -->
+        <div style="text-align: center; margin-bottom: 25px">
+          <img
+            src="payments.jpg"
+            alt="UPI QR Code"
+            width="220"
+            style="
+              border-radius: 12px;
+              box-shadow: 0 0 15px rgba(40, 167, 69, 0.6);
+            "
+          />
+          <p style="margin-top: 10px; font-size: 0.9rem; color: #aaa">
+            Scan & Pay via UPI (Google Pay / PhonePe / Paytm)
+          </p>
+        </div>
+
+        <!-- Registration Form -->
         <form action="https://formspree.io/f/xldwvlaq" method="POST">
-          <input type="text" name="team_name" placeholder="Team Name" required />
-          <input type="text" name="captain_name" placeholder="Captain's Name" required />
-          <input type="email" name="email" placeholder="Contact Email" required />
+          <input
+            type="text"
+            name="team_name"
+            placeholder="Team Name"
+            required
+          />
+          <input
+            type="text"
+            name="captain_name"
+            placeholder="Captain's Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Contact Email"
+            required
+          />
           <input type="text" name="phone" placeholder="Phone Number" required />
-          <textarea name="players" placeholder="List Player Names (8 minimum [6 + 2])" rows="4" required></textarea>
-          <button type="submit"><i class="fas fa-paper-plane"></i> Submit Registration</button>
+          <textarea
+            name="players"
+            placeholder="List Player Names (8 minimum [6 + 2])"
+            rows="4"
+            required
+          ></textarea>
+
+          <!-- Transaction ID Field -->
+          <input
+            type="text"
+            name="transaction_id"
+            placeholder="Payment Transaction ID"
+            required
+          />
+
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i> Submit Registration
+          </button>
         </form>
       </div>
     </section>
@@ -404,7 +470,3 @@
     </script>
   </body>
 </html>
-
-
-
-
